@@ -39,7 +39,7 @@ python3 manage.py createsuperuser
 #### Run Celery (in a separate terminal):
 ```bash
 sudo apt-get install redis
-celery -A ingredient_order_site worker -l info -B
+celery -A online_announcements_platform worker -l info -B
 ```
 #### Run server:
 ```bash

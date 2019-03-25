@@ -161,7 +161,14 @@ SWAGGER_SETTINGS = {
 LOGIN_URL = 'rest-auth/login'
 LOGOUT_URL = 'rest-auth/logout'
 
+REDIS_HOST = 'localhost'
+REDIS_PORT = '6379'
+BROKER_URL = 'redis://' + REDIS_HOST + ':' + REDIS_PORT + '/0'
+BROKER_TRANSPORT_OPTIONS = {'visibility_timeout': 3600}
+CELERY_RESULT_BACKEND = 'redis://' + REDIS_HOST + ':' + REDIS_PORT + '/0'
+
 MAX_ANNOUNCEMENT_IMAGES = 8
+MAX_DAYS_WITHOUT_ACTIVITY = 0
 
 try:
     from .local_settings import *
