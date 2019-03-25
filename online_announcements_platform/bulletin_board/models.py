@@ -5,11 +5,13 @@ from mptt.models import MPTTModel, TreeForeignKey
 
 class Category(MPTTModel):
     name = models.CharField(max_length=32, unique=True)
-    nested_category = TreeForeignKey('self', on_delete=models.CASCADE, null=True, blank=True,
-                                     related_name='nested_category')
+    parent = TreeForeignKey('self', on_delete=models.CASCADE, null=True, blank=True, related_name='subcategory')
 
     class MPTTMeta:
         order_insertion_by = ['name']
+
+    def __str__(self):
+        return self.name
 
 
 class Announcement(models.Model):
@@ -21,9 +23,12 @@ class Announcement(models.Model):
     is_hidden = models.BooleanField(default=False)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
-    in_favorites = models.ManyToManyField(User, related_name='in_favorites')
+    in_favorites = models.ManyToManyField(User, related_name='in_favorites', blank=True)
+
+    def __str__(self):
+        return self.name
 
 
 class AnnouncementImage(models.Model):
-    image = models.ImageField()
-    announcement = models.ForeignKey(Announcement, related_name='images', on_delete=models.CASCADE)
+    image = models.ImageField(upload_to='images', blank=True)
+    announcement = models.ForeignKey(Announcement, on_delete=models.CASCADE)

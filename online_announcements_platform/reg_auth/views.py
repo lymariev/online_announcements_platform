@@ -1,9 +1,7 @@
 from allauth.socialaccount.providers.facebook.views import FacebookOAuth2Adapter
 from allauth.socialaccount.providers.twitter.views import TwitterOAuthAdapter
-from rest_auth.registration.views import SocialLoginView
-from rest_auth.social_serializers import TwitterLoginSerializer
-from rest_auth.registration.views import SocialConnectView
-from rest_auth.social_serializers import TwitterConnectSerializer
+from rest_auth.registration.views import SocialLoginView, SocialConnectView
+from rest_auth.social_serializers import TwitterLoginSerializer, TwitterConnectSerializer
 
 
 class FacebookLogin(SocialLoginView):
