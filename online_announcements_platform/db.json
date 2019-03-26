@@ -1,0 +1,736 @@
+[
+{
+  "model": "auth.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$120000$8yh1KyriKevR$5V8HUrMlNktzwqkUSlVCFjeF3VQEsOzaFWLyU5HiHuU=",
+    "last_login": "2019-03-26T19:56:07.933Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@mail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2019-03-26T19:55:45.179Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$120000$dm2l1WRoTaqA$ZARfCpK0bcXfY+PU5j8Sz9/pFjChOf2y6w62WHka31Q=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "anna",
+    "first_name": "",
+    "last_name": "",
+    "email": "anna@mail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-03-26T20:17:46Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 5,
+  "fields": {
+    "password": "pbkdf2_sha256$120000$5lyx0Nq08Um1$878LJYLDrue8RZ7Vz7JZEEYPAYtCIeCSBHamFY+APgQ=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "john",
+    "first_name": "",
+    "last_name": "",
+    "email": "john@mail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-03-26T20:19:26Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "3n3p5mnq5bsyamdx550zkjwpyv9ekq7o",
+  "fields": {
+    "session_data": "MTg3OTgwMmY1MDUxZjg3YTQ0NzM4YTY1OTkwOWQ1YTY3Y2Y2MGVhYjp7ImFjY291bnRfdmVyaWZpZWRfZW1haWwiOm51bGwsImFjY291bnRfdXNlciI6IjIiLCJfYXV0aF91c2VyX2lkIjoiMiIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiNWRmZDE2ZWFmOTg0MzE0MThkMDhiYTY0OTBhN2M1YjJhYTZhYTVjYSJ9",
+    "expire_date": "2019-04-07T08:13:17.962Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "f14ejq8dqropf9gv30o3rpkvhaod125x",
+  "fields": {
+    "session_data": "YzM1ZjY5OTQ2ZjNjODg0Y2RhMmZiOWU3ZDE5NDQ4ZjYxMTI1YTFiMzp7Il9hdXRoX3VzZXJfaWQiOiIzIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIxZDVlMzc3YWY1M2E0MDM2YjlkNzhiYmVlZTZjZTYwYWZiYmVkNDEwIn0=",
+    "expire_date": "2019-04-09T19:56:07.946Z"
+  }
+},
+{
+  "model": "sites.site",
+  "pk": 1,
+  "fields": {
+    "domain": "example.com",
+    "name": "example.com"
+  }
+},
+{
+  "model": "bulletin_board.category",
+  "pk": 3,
+  "fields": {
+    "name": "Appliances",
+    "parent": null,
+    "lft": 1,
+    "rght": 6,
+    "tree_id": 1,
+    "level": 0
+  }
+},
+{
+  "model": "bulletin_board.category",
+  "pk": 4,
+  "fields": {
+    "name": "Refrigerators",
+    "parent": 3,
+    "lft": 2,
+    "rght": 3,
+    "tree_id": 1,
+    "level": 1
+  }
+},
+{
+  "model": "bulletin_board.category",
+  "pk": 5,
+  "fields": {
+    "name": "Vacuum cleaners",
+    "parent": 3,
+    "lft": 4,
+    "rght": 5,
+    "tree_id": 1,
+    "level": 1
+  }
+},
+{
+  "model": "bulletin_board.category",
+  "pk": 6,
+  "fields": {
+    "name": "Sport",
+    "parent": null,
+    "lft": 1,
+    "rght": 6,
+    "tree_id": 2,
+    "level": 0
+  }
+},
+{
+  "model": "bulletin_board.category",
+  "pk": 7,
+  "fields": {
+    "name": "Bicycles",
+    "parent": 6,
+    "lft": 2,
+    "rght": 3,
+    "tree_id": 2,
+    "level": 1
+  }
+},
+{
+  "model": "bulletin_board.category",
+  "pk": 8,
+  "fields": {
+    "name": "Boats",
+    "parent": 6,
+    "lft": 4,
+    "rght": 5,
+    "tree_id": 2,
+    "level": 1
+  }
+},
+{
+  "model": "bulletin_board.announcement",
+  "pk": 35,
+  "fields": {
+    "name": "Fridge Indesit",
+    "description": "2-door fridge freezer indesit in silver. very good condition, fully functioning.\r\nDimensions (cm) H190.0 x W70.0 x D68\r\nShelf Type - Safety Glass\r\nEnergy Efficiency Rating A\r\nFrost Free Freezer\r\nAuto Defrost Refrigerator\r\nFridge Capacity 329 Litres\r\nFreezer Capacity 73 Litres",
+    "price": "80.00",
+    "price_is_negotiable": false,
+    "last_activity": "2019-03-26",
+    "is_hidden": false,
+    "category": 4,
+    "author": 4,
+    "in_favorites": [
+      5
+    ]
+  }
+},
+{
+  "model": "bulletin_board.announcement",
+  "pk": 36,
+  "fields": {
+    "name": "Vax V-125A All Terrain Upright C",
+    "description": "Brand new, unopened. Selling because I already have another vacuum cleaner.\r\n\r\n- 6 Year Vax guarantee for complete peace of mind\r\n- Dual V air path technology provides consistent suction across the width of the floor head for improved carpet drying\r\n- Heated cleaning; automix cleaning system provides the correct mix of solution and water for optimum cleaning results\r\n- Spin-scrub brush Technology - six brushes gently and effectively loosen dirt from carpet pile\r\n- Powered Spin-scrub hand tool, ideal for stairs and upholstery cleaning\r\n- Auto-rinse facility - washes on the forward direction, rinses in the reverse, wide cleaning head\r\n- Sucks up spills with no preparation needed; fingertip controls\r\n- Water tank capacity: 3.7 L clean plus 3 L dirty; 2.3 m hose",
+    "price": "200.00",
+    "price_is_negotiable": true,
+    "last_activity": "2019-03-26",
+    "is_hidden": false,
+    "category": 5,
+    "author": 5,
+    "in_favorites": [
+      4
+    ]
+  }
+},
+{
+  "model": "bulletin_board.announcement",
+  "pk": 37,
+  "fields": {
+    "name": "20\" Paris Bicycle Ages 7+",
+    "description": "Condition: The bicycle has been assembled and stripped of its packaging, however it has been used once only due to lack of time to ride it and lack of storage space in a flat.\r\n\r\nCollection: As the bicycle has already been assembled, it cannot be shipped; therefore the item can be collected from the following collection point:\r\n\r\nOak Hill Park, 18 Parkside Gardens, London EN4 8JP\r\n\r\nItem description: This 20 Inch Paris Bicycle is beautifully designed and tailored to young riders. Whether riding to the park with friends or cycling to the shop, your child is sure to arrive in style with this eye-catching bicycle, making it a perfect celebratory gift.\r\n\r\nThe elegant steel carrier basket lets kids bring their toys and accessories or other necessities with them wherever they go. It boasts a strong and durable steel frame in bright pink and white with stunning floral details and flowing script. The pink height- adjustable saddle and textured, easy grip handlebars are designed for the rider\u2019s comfort.\r\n\r\nBright pink steel mudguards help to protect your child (and their clothes) from splashes while cycling. The 20 Inch Paris Bike is equipped with a bell and front and rear reflectors to help the cyclist be seen and heard when they\u2019re out and about, guaranteeing their safety. The fixed gear keeps cycling simple, while the front and rear V brakes help to protect the rider. The 20 Inch Paris Bike also features an alloy rim with air pumped tyres, and to top it off, no assembly required! This is truly the perfect bicycle for a child who wants to cycle independently on a bike that looks and rides like a dream.",
+    "price": "70.00",
+    "price_is_negotiable": false,
+    "last_activity": "2019-03-26",
+    "is_hidden": false,
+    "category": 7,
+    "author": 4,
+    "in_favorites": []
+  }
+},
+{
+  "model": "bulletin_board.announcement",
+  "pk": 38,
+  "fields": {
+    "name": "Single speed /fixed gear bicycle",
+    "description": "Selling bicycle in great condition. Single speed and fixed gear rear wheel. Bike all black. Brand new breaks, two sets of pedals, one for clip shoes and another one normal pedals with toe cages. Two set of grips, one of them super comfortable. I have some other extra stuff which we could negotiate a full package for. I have 4 lights, one set of water proff shoe cover and a floor pump.",
+    "price": "130.00",
+    "price_is_negotiable": true,
+    "last_activity": "2019-03-26",
+    "is_hidden": false,
+    "category": 7,
+    "author": 4,
+    "in_favorites": [
+      5
+    ]
+  }
+},
+{
+  "model": "bulletin_board.announcement",
+  "pk": 39,
+  "fields": {
+    "name": "Grey Lithium 1 hybrid bicycle",
+    "description": "This bikes in almost new condition a very smooth ride perfect for long commutes, it has 7 gears new chain new grips and responsive caliper breaks, Great deal",
+    "price": "190.00",
+    "price_is_negotiable": false,
+    "last_activity": "2019-03-26",
+    "is_hidden": false,
+    "category": 7,
+    "author": 5,
+    "in_favorites": [
+      4
+    ]
+  }
+},
+{
+  "model": "bulletin_board.announcement",
+  "pk": 40,
+  "fields": {
+    "name": "Speed boat RIB 5.0m, 55hp+4hp ou",
+    "description": "Speed boat RIB Osprey 5.0m, 55hp Suzuki + 4hp Johnson outboard engines, full water ski and donut gear, complete package, reliable and safe boat\r\nBoat: Osprey RIB (Rigid Inflatable Boat), 5.0metres, A-frame, sports seats, dual fuel tanks, anchor and rope, stow box, watertight bulkhead, non-slip mats\r\nEngine 1: 55hp Suzuki oil injected outboard with electronic ignition, very reliable\r\nEngine 2: 4hp Johnson 2-stroke with pull cord start, very reliable\r\nTrailer: Hallmark Coaster trailer in good condition, with sand wheel (eases beach launches), jockey wheel, high pull winch, light board, new tyres\r\nSkis & Donut: Jobe Allegre skis, Hydroslide Donut, ski rope with boat triangle attachments, Jobe ski jacket, 2 additional life jackets\r\nRadios, compass, tools, cover: Ship to shore VHF radio, hand held VHF radio, off-shore Compass, wheel clamp, tool kit, air-horn, recovery rope, black full boat weather cover for storage, etc etc.\r\nReason for sale: Young baby restricts boat usage - reluctant sale, will definitely buy another boat in a few years... Great reliable boat, would suit water skiers, leisure boaters and rescue boat usage. This boat and ski pack is ready to go and is great fun.",
+    "price": "1400.00",
+    "price_is_negotiable": false,
+    "last_activity": "2019-03-26",
+    "is_hidden": false,
+    "category": 8,
+    "author": 5,
+    "in_favorites": []
+  }
+},
+{
+  "model": "bulletin_board.announcement",
+  "pk": 41,
+  "fields": {
+    "name": "Zodiac Pro 9 Man",
+    "description": "Zodiac has an international reputation as a world leader in the inflatable sector. This 9 Man RIB is a 2004 boat, offered in Red and has the Optima FTC offset console and a Mercury Efi 60 hp petrol outboard, (2003). It is offered for sale in very clean condition.",
+    "price": "2000.00",
+    "price_is_negotiable": true,
+    "last_activity": "2019-03-26",
+    "is_hidden": false,
+    "category": 8,
+    "author": 5,
+    "in_favorites": [
+      4
+    ]
+  }
+},
+{
+  "model": "bulletin_board.announcement",
+  "pk": 42,
+  "fields": {
+    "name": "Whirlpool Stainless Steel Large",
+    "description": "Great condition\r\nmeasures 190cm tall\r\n60cm wide, 60cm deep\r\n\r\nfrost free with excellent energy rating\r\n\r\ncan deliver up to 5 miles from Enfield north London",
+    "price": "140.00",
+    "price_is_negotiable": false,
+    "last_activity": "2019-03-26",
+    "is_hidden": false,
+    "category": 4,
+    "author": 4,
+    "in_favorites": []
+  }
+},
+{
+  "model": "bulletin_board.announcement",
+  "pk": 43,
+  "fields": {
+    "name": "Kenmore Canister Vacuum Cleaner",
+    "description": "Kenmore Canister Vacuum Cleaner, works amazing, strong suction.",
+    "price": "100.00",
+    "price_is_negotiable": false,
+    "last_activity": "2019-03-26",
+    "is_hidden": false,
+    "category": 5,
+    "author": 5,
+    "in_favorites": [
+      4
+    ]
+  }
+},
+{
+  "model": "bulletin_board.announcement",
+  "pk": 44,
+  "fields": {
+    "name": "Tornado CV30 Vacuum Cleaner",
+    "description": "Tornado CV30 Vacuum Cleaner, retails new $600, works amazing and has strong suction. It's high quality vacuum, and made in Germany.",
+    "price": "100.00",
+    "price_is_negotiable": true,
+    "last_activity": "2019-03-26",
+    "is_hidden": false,
+    "category": 5,
+    "author": 5,
+    "in_favorites": [
+      4
+    ]
+  }
+},
+{
+  "model": "bulletin_board.announcementimage",
+  "pk": 13,
+  "fields": {
+    "image": "images/00O0O_bUoZvj0hEZ7_600x450.jpg",
+    "announcement": 35
+  }
+},
+{
+  "model": "bulletin_board.announcementimage",
+  "pk": 14,
+  "fields": {
+    "image": "images/00c0c_c5xBCOH5S81_600x450.jpg",
+    "announcement": 36
+  }
+},
+{
+  "model": "bulletin_board.announcementimage",
+  "pk": 15,
+  "fields": {
+    "image": "images/00T0T_jCT6qIMNOTD_600x450.jpg",
+    "announcement": 36
+  }
+},
+{
+  "model": "bulletin_board.announcementimage",
+  "pk": 16,
+  "fields": {
+    "image": "images/01010_bJAwsae7vCt_600x450.jpg",
+    "announcement": 36
+  }
+},
+{
+  "model": "bulletin_board.announcementimage",
+  "pk": 17,
+  "fields": {
+    "image": "images/00o0o_jJgaXG9cIxI_600x450.jpg",
+    "announcement": 37
+  }
+},
+{
+  "model": "bulletin_board.announcementimage",
+  "pk": 18,
+  "fields": {
+    "image": "images/00S0S_acQg9uBSkkw_600x450.jpg",
+    "announcement": 37
+  }
+},
+{
+  "model": "bulletin_board.announcementimage",
+  "pk": 19,
+  "fields": {
+    "image": "images/01313_kMHGcouC857_600x450.jpg",
+    "announcement": 37
+  }
+},
+{
+  "model": "bulletin_board.announcementimage",
+  "pk": 20,
+  "fields": {
+    "image": "images/00l0l_9c98EaAlXwq_600x450.jpg",
+    "announcement": 38
+  }
+},
+{
+  "model": "bulletin_board.announcementimage",
+  "pk": 21,
+  "fields": {
+    "image": "images/00000_birptL5RK1Q_600x450.jpg",
+    "announcement": 39
+  }
+},
+{
+  "model": "bulletin_board.announcementimage",
+  "pk": 22,
+  "fields": {
+    "image": "images/00l0l_1b1acUuJoI_600x450.jpg",
+    "announcement": 39
+  }
+},
+{
+  "model": "bulletin_board.announcementimage",
+  "pk": 23,
+  "fields": {
+    "image": "images/00x0x_42YM6raX0MU_600x450.jpg",
+    "announcement": 39
+  }
+},
+{
+  "model": "bulletin_board.announcementimage",
+  "pk": 24,
+  "fields": {
+    "image": "images/00808_UJNpPAAswi_600x450.jpg",
+    "announcement": 40
+  }
+},
+{
+  "model": "bulletin_board.announcementimage",
+  "pk": 25,
+  "fields": {
+    "image": "images/00C0C_cS4qMJXdkIv_600x450.jpg",
+    "announcement": 41
+  }
+},
+{
+  "model": "bulletin_board.announcementimage",
+  "pk": 26,
+  "fields": {
+    "image": "images/00E0E_lmNUakLNX3k_600x450.jpg",
+    "announcement": 42
+  }
+},
+{
+  "model": "bulletin_board.announcementimage",
+  "pk": 27,
+  "fields": {
+    "image": "images/00I0I_1ZP1FibsFDu_600x450.jpg",
+    "announcement": 42
+  }
+},
+{
+  "model": "bulletin_board.announcementimage",
+  "pk": 28,
+  "fields": {
+    "image": "images/00n0n_1wrtxfZ2ICb_600x450.jpg",
+    "announcement": 42
+  }
+},
+{
+  "model": "bulletin_board.announcementimage",
+  "pk": 29,
+  "fields": {
+    "image": "images/00n0n_ixpBwkjNmcs_600x450.jpg",
+    "announcement": 42
+  }
+},
+{
+  "model": "bulletin_board.announcementimage",
+  "pk": 30,
+  "fields": {
+    "image": "images/01111_5x3wHmLDti8_600x450.jpg",
+    "announcement": 42
+  }
+},
+{
+  "model": "bulletin_board.announcementimage",
+  "pk": 31,
+  "fields": {
+    "image": "images/00j0j_awXeoyVM5GU_600x450.jpg",
+    "announcement": 43
+  }
+},
+{
+  "model": "bulletin_board.announcementimage",
+  "pk": 32,
+  "fields": {
+    "image": "images/00i0i_aUBhqs6rBLz_600x450.jpg",
+    "announcement": 44
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2019-03-26T19:59:47.958Z",
+    "user": 3,
+    "content_type": 16,
+    "object_id": "3",
+    "object_repr": "Appliances",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2019-03-26T20:00:27.000Z",
+    "user": 3,
+    "content_type": 16,
+    "object_id": "4",
+    "object_repr": "Refrigerators",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2019-03-26T20:00:51.048Z",
+    "user": 3,
+    "content_type": 16,
+    "object_id": "5",
+    "object_repr": "Vacuum cleaners",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2019-03-26T20:01:11.172Z",
+    "user": 3,
+    "content_type": 16,
+    "object_id": "6",
+    "object_repr": "Sport",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2019-03-26T20:01:35.504Z",
+    "user": 3,
+    "content_type": 16,
+    "object_id": "7",
+    "object_repr": "Bicycles",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2019-03-26T20:02:01.499Z",
+    "user": 3,
+    "content_type": 16,
+    "object_id": "8",
+    "object_repr": "Boats",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2019-03-26T20:17:46.881Z",
+    "user": 3,
+    "content_type": 4,
+    "object_id": "4",
+    "object_repr": "anna",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2019-03-26T20:18:28.039Z",
+    "user": 3,
+    "content_type": 4,
+    "object_id": "4",
+    "object_repr": "anna",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"email\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2019-03-26T20:19:26.447Z",
+    "user": 3,
+    "content_type": 4,
+    "object_id": "5",
+    "object_repr": "john",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2019-03-26T20:19:43.530Z",
+    "user": 3,
+    "content_type": 4,
+    "object_id": "5",
+    "object_repr": "john",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"email\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2019-03-26T20:21:24.551Z",
+    "user": 3,
+    "content_type": 14,
+    "object_id": "35",
+    "object_repr": "Fridge Indesit",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"announcement image\", \"object\": \"AnnouncementImage object (13)\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2019-03-26T20:24:44.504Z",
+    "user": 3,
+    "content_type": 14,
+    "object_id": "36",
+    "object_repr": "Vax V-125A All Terrain Upright C",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"announcement image\", \"object\": \"AnnouncementImage object (14)\"}}, {\"added\": {\"name\": \"announcement image\", \"object\": \"AnnouncementImage object (15)\"}}, {\"added\": {\"name\": \"announcement image\", \"object\": \"AnnouncementImage object (16)\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2019-03-26T20:28:06.565Z",
+    "user": 3,
+    "content_type": 14,
+    "object_id": "37",
+    "object_repr": "20\" Paris Bicycle Ages 7+",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"announcement image\", \"object\": \"AnnouncementImage object (17)\"}}, {\"added\": {\"name\": \"announcement image\", \"object\": \"AnnouncementImage object (18)\"}}, {\"added\": {\"name\": \"announcement image\", \"object\": \"AnnouncementImage object (19)\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2019-03-26T20:29:36.811Z",
+    "user": 3,
+    "content_type": 14,
+    "object_id": "38",
+    "object_repr": "Single speed /fixed gear bicycle",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"announcement image\", \"object\": \"AnnouncementImage object (20)\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2019-03-26T20:31:32.615Z",
+    "user": 3,
+    "content_type": 14,
+    "object_id": "39",
+    "object_repr": "Grey Lithium 1 hybrid bicycle",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"announcement image\", \"object\": \"AnnouncementImage object (21)\"}}, {\"added\": {\"name\": \"announcement image\", \"object\": \"AnnouncementImage object (22)\"}}, {\"added\": {\"name\": \"announcement image\", \"object\": \"AnnouncementImage object (23)\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2019-03-26T20:33:22.318Z",
+    "user": 3,
+    "content_type": 14,
+    "object_id": "40",
+    "object_repr": "Speed boat RIB 5.0m, 55hp+4hp ou",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"announcement image\", \"object\": \"AnnouncementImage object (24)\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2019-03-26T20:34:39.233Z",
+    "user": 3,
+    "content_type": 14,
+    "object_id": "41",
+    "object_repr": "Zodiac Pro 9 Man",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"announcement image\", \"object\": \"AnnouncementImage object (25)\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2019-03-26T20:38:53.036Z",
+    "user": 3,
+    "content_type": 14,
+    "object_id": "42",
+    "object_repr": "Whirlpool Stainless Steel Large",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"announcement image\", \"object\": \"AnnouncementImage object (26)\"}}, {\"added\": {\"name\": \"announcement image\", \"object\": \"AnnouncementImage object (27)\"}}, {\"added\": {\"name\": \"announcement image\", \"object\": \"AnnouncementImage object (28)\"}}, {\"added\": {\"name\": \"announcement image\", \"object\": \"AnnouncementImage object (29)\"}}, {\"added\": {\"name\": \"announcement image\", \"object\": \"AnnouncementImage object (30)\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2019-03-26T20:43:55.819Z",
+    "user": 3,
+    "content_type": 14,
+    "object_id": "43",
+    "object_repr": "Kenmore Canister Vacuum Cleaner",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"announcement image\", \"object\": \"AnnouncementImage object (31)\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2019-03-26T20:45:11.430Z",
+    "user": 3,
+    "content_type": 14,
+    "object_id": "44",
+    "object_repr": "Tornado CV30 Vacuum Cleaner",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"announcement image\", \"object\": \"AnnouncementImage object (32)\"}}]"
+  }
+}
+]
