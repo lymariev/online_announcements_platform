@@ -49,3 +49,18 @@ python3 manage.py runserver
 ```bash
 python3 manage.py test
 ```
+#### Test WebSockets:
+```javascript
+var chatSocket = new WebSocket(
+        'ws://' + window.location.host +
+        '/announcements/1/online-chat/');
+chatSocket.onmessage = function(e) {
+        var data = JSON.parse(e.data);
+        var message = data['message'];
+        var username = data['username'];
+        console.log(username, ': ', message);
+    };
+chatSocket.send(JSON.stringify({
+            'message': 'Hello world!'
+        }));
+```

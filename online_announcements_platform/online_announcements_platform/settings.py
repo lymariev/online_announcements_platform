@@ -41,9 +41,10 @@ INSTALLED_APPS = [
     'django.contrib.sites',
 
     'rest_framework',
+    'channels',
+
     'rest_framework.authtoken',
     'rest_auth',
-
     'allauth',
     'allauth.account',
     'rest_auth.registration',
@@ -51,7 +52,6 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.facebook',
     'allauth.socialaccount.providers.twitter',
     'rest_framework_swagger',
-
     'mptt',
 
     'reg_auth',
@@ -86,6 +86,7 @@ TEMPLATES = [
     },
 ]
 
+ASGI_APPLICATION = 'online_announcements_platform.routing.application'
 WSGI_APPLICATION = 'online_announcements_platform.wsgi.application'
 
 
@@ -166,6 +167,15 @@ REDIS_PORT = '6379'
 BROKER_URL = 'redis://' + REDIS_HOST + ':' + REDIS_PORT + '/0'
 BROKER_TRANSPORT_OPTIONS = {'visibility_timeout': 3600}
 CELERY_RESULT_BACKEND = 'redis://' + REDIS_HOST + ':' + REDIS_PORT + '/0'
+
+CHANNEL_LAYERS = {
+    'default': {
+        'BACKEND': 'channels_redis.core.RedisChannelLayer',
+        'CONFIG': {
+            'hosts': (f'redis://{REDIS_HOST}:{REDIS_PORT}/1',)
+        },
+    },
+}
 
 MAX_ANNOUNCEMENT_IMAGES = 8
 MAX_DAYS_WITHOUT_ACTIVITY = 0
