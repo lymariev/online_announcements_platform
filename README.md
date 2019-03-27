@@ -29,13 +29,13 @@ python3 manage.py runserver
 - Swagger для ендпоинтов\
 (GET http://127.0.0.1:8000/)
 - Регистрация/авторизация пользователей\
-(POST http://127.0.0.1:8000/rest-auth/registration/)\
+(POST http://127.0.0.1:8000/rest-auth/registration/) <br />
 (POST http://127.0.0.1:8000/rest-auth/login/) 
 - CRUD операции для объявления.\
  Основные поля:
   - Наименование (тема)
   - Вложенная рубрика/категория\
-  (GET http://127.0.0.1:8000/categories/)\
+  (GET http://127.0.0.1:8000/categories/) <br />
   (GET http://127.0.0.1:8000/categories/{id}/)
     - Пример вложенной категории :
       - Бытовая техника
@@ -57,8 +57,11 @@ python3 manage.py runserver
     (GET http://127.0.0.1:8000/announcements/?category=4&price=80.00)
     - пагинация списка объявлений
   - только автор объявления может редактировать и удалять объявления\
-  (PUT http://127.0.0.1:8000/announcements/{id}/)\
-  (DELETE http://127.0.0.1:8000/announcements/{id}/)
+  (PUT http://127.0.0.1:8000/announcements/{id}/) <br />
+  (DELETE http://127.0.0.1:8000/announcements/{id}/) <br />
+  Пример POST и PUT запросов в Postman:
+  <img src="https://raw.githubusercontent.com/Stinesc/online_announcements_platform/master/online_announcements_platform/static/media/images/postman_screens/Screenshot%20from%202019-03-27%2010-39-32.png" />
+  <img src="https://raw.githubusercontent.com/Stinesc/online_announcements_platform/master/online_announcements_platform/static/media/images/postman_screens/Screenshot%20from%202019-03-25%2007-44-21.png" />
 - Автоматическое скрытие объявления через 30 дней после последней активности (создания/обновления объявления)
 - Админка: для управления пользователями, объявлениями и категориями\
   (GET http://127.0.0.1:8000/admin/)
@@ -75,7 +78,7 @@ python3 manage.py runserver
   - удаление объявления из избранных
   (DELETE http://127.0.0.1:8000/announcements/{id}/delete-from-favorites/)
 - Авторизация с помощью социальных сетей\
-  (POST http://127.0.0.1:8000/rest-auth/facebook/)\
+  (POST http://127.0.0.1:8000/rest-auth/facebook/) <br />
   (POST http://127.0.0.1:8000/rest-auth/twitter/)
 - Чат на веб-сокетах между авторизованным пользователем и автором сообщения (если он доступен онлайн)\
   Для тестирования чата откройте в браузере несколько вкладок (GET http://127.0.0.1:8000/) и запустите в них веб-консоль.\
