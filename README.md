@@ -60,8 +60,8 @@ python3 manage.py runserver
   (PUT http://127.0.0.1:8000/announcements/{id}/) <br />
   (DELETE http://127.0.0.1:8000/announcements/{id}/) <br />
   Пример POST и PUT запросов в Postman:
-  ``![first screen](https://github.com/Stinesc/online_announcements_platform/blob/master/online_announcements_platform/static/media/images/postman_screens/Screenshot%20from%202019-03-27%2010-39-32.png)``
-  ``![second screen](https://github.com/Stinesc/online_announcements_platform/blob/master/online_announcements_platform/static/media/images/postman_screens/Screenshot%20from%202019-03-25%2007-44-21.png)``
+  ``![first screen](https://raw.githubusercontent.com/Stinesc/online_announcements_platform/master/online_announcements_platform/static/media/images/postman_screens/Screenshot%20from%202019-03-27%2010-39-32.png)``
+  ``![second screen](https://raw.githubusercontent.com/Stinesc/online_announcements_platform/master/online_announcements_platform/static/media/images/postman_screens/Screenshot%20from%202019-03-25%2007-44-21.png)``
 - Автоматическое скрытие объявления через 30 дней после последней активности (создания/обновления объявления)
 - Админка: для управления пользователями, объявлениями и категориями\
   (GET http://127.0.0.1:8000/admin/)
